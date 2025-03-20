@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Análise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <button id="themeToggle">🌙 Modo Escuro</button>
+        </aside>
+        
+        <main class="main-content">
+            <header>
+                <h1>Painel de Controle</h1>
+            </header>
+            
+            <section class="cards">
+                <div class="card">
+                    <h3>Usuários Ativos</h3>
+                    <p id="usersCount">0</p>
+                </div>
+                <div class="card">
+                    <h3>Vendas</h3>
+                    <p id="salesCount">0</p>
+                </div>
+                <div class="card">
+                    <h3>Lucro</h3>
+                    <p id="profitCount">0</p>
+                </div>
+            </section>
+
+            <!-- Formulário para adicionar valores -->
+            <section class="form-container">
+                <h2>Adicionar Nova Venda</h2>
+                <form id="salesForm">
+                    <input type="number" id="newSaleValue" placeholder="Valor da Venda" required>
+                    <button type="submit">Adicionar</button>
+                </form>
+                
+            </section>
+
+            <section class="chart-container">
+                <canvas id="salesChart"></canvas>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

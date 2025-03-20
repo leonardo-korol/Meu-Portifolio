@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clone Instagram</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">Instagram</div>
+    <nav class="nav">
+      <a href="#">Explorar</a>
+      <a href="#">Notificações</a>
+      <a href="#">Perfil</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+
+    <!-- Campo de texto "O que você está pensando?" -->
+    <section class="new-post">
+      <textarea id="newPostText" placeholder="O que você está pensando?" rows="4"></textarea>
+      <button id="postButton">Publicar</button>
+    </section>
+
+    <!-- Postagens -->
+    <section class="post">
+      <div class="post-header">
+        <img src="img_/pessoa_1.jpg" alt="Usuário" class="profile-pic">
+        <div class="post-info">
+          <strong>João Silva</strong>
+          <p>2 minutos atrás</p>
+        </div>
+      </div>
+      <img src="img_/pessoa-2-com_fundo.jpg" alt="Post" class="post-image">
+      <div class="post-actions">
+        <button class="like-btn">Curtir</button>
+        <button class="comment-btn">Comentar</button>
+        <button class="share-btn">Compartilhar</button>
+      </div>
+      <div class="post-likes">
+        <p>Curtido por <strong>Maria Souza</strong> e <strong>outras 10 pessoas</strong></p>
+      </div>
+    </section>
+
+    <section class="post">
+      <div class="post-header">
+        <img src="img_/pessoa-3.jpg" alt="Usuário" class="profile-pic">
+        <div class="post-info">
+          <strong>Lucas Lima</strong>
+          <p>1 hora atrás</p>
+        </div>
+      </div>
+      <img src="img_/cachorro.jpg" alt="Post" class="post-image">
+      <div class="post-actions">
+        <button class="like-btn">Curtir</button>
+        <button class="comment-btn">Comentar</button>
+        <button class="share-btn">Compartilhar</button>
+      </div>
+      <div class="post-likes">
+        <p>Curtido por <strong>Lucas Costa</strong> e <strong>outras 5 pessoas</strong></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Instagram Clone. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
